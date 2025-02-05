@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-reg.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo">
+        <h2>Create an Account</h2>
+        <form action="/registration.html" method="POST">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-phone"></i>
+                        </span>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Billing Address -->
+            <fieldset>
+                <legend>Billing Address</legend>
+                <div class="form-group">
+                    <label for="companyName">Company Name (Optional)</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                        </span>
+                        <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Enter your company name (optional)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="streetAddress">Street Address</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </span>
+                        <input type="text" class="form-control" id="streetAddress" name="streetAddress" placeholder="Enter your street address" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="streetAddress2">Street Address 2</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </span>
+                        <input type="text" class="form-control" id="streetAddress2" name="streetAddress2" placeholder="Enter your second address line (optional)">
+                    </div>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                            </span>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="postalCode">Postal Code</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                            </span>
+                            <input type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Enter your postal code" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canada Field -->
+<div class="form-group">
+    <label for="country">Country</label>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="glyphicon glyphicon-globe"></i>
+        </span>
+        <input type="text" class="form-control" id="country" name="country" value="Canada" readonly>
+    </div>
+</div>
+                <div class="form-group">
+                    <label for="taxId">Tax ID (Optional)</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-barcode"></i>
+                        </span>
+                        <input type="text" class="form-control" id="taxId" name="taxId" placeholder="Enter your tax ID (optional)">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Account Security -->
+            <fieldset>
+                <legend>Account Security</legend>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Create a password" required>
+                        </div>
+                        <small id="passwordStrength" class="text-muted">Password strength: Enter a Password</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Terms and Conditions -->
+            <div class="terms-block">
+                <div class="alert alert-warning">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <h>Terms of Service</h>: please agree to the terms of service and privacy policy
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                       By submitting the order, you agree to the <a href="/terms" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.You agree that WHC will automatically attempt to renew your services prior to their next due date unless you request otherwise from your Client Area.
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <div class="footer">
+            Already a client? <a href="/login">Log in</a>
+        </div>
+
+        <!-- Sign Up & Language Option -->
+        <div class="signup-lang">
+            <p>New to WHC? <a href="#">Sign Up</a></p>
+            <a href="#" class="language-option">
+                <i class="fa fa-language"></i> Français <!-- Language Icon -->
+            </a>
+        </div>
+    </div>
+</body>
+</html>
